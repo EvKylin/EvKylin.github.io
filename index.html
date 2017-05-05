@@ -52,6 +52,18 @@
                 margin: 0;
                 letter-spacing: 2px;
             }
+            p > a:first-child{
+                margin-left: -13px;
+            }
+            p > a:not(:first-child){
+                margin-left: 15px;
+            }
+            p > a:not(:first-child)::before{
+                content: '❉';
+                display: inline-block;
+                margin-right: 15px;
+                color: #000;
+            }
 
             a {
                 color: #999;
@@ -68,7 +80,7 @@
             <h1>kylin</h1>
             <h2>Design, Code &amp; Things in Between&nbsp;</h2>
             <h2>行里之间有红颜</h2>
-            <p><a href="https://github.com/evkylin" target="_blank">Github</a></p>
+            <p><a href="https://github.com/evkylin" target="_blank">Github</a><a href="http://blog.ikylin.me/" target="_blank">Blog</a></p>
         </div>
     </body>
 </html>
